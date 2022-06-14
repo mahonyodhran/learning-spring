@@ -1,9 +1,11 @@
 package com.odhranmahony.lil.learningspring.business;
 
 import com.odhranmahony.lil.learningspring.data.*;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service
 public class ReservationService {
     private final RoomRepository roomRepository;
     private final GuestRepository guestRepository;
