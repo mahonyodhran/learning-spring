@@ -11,11 +11,11 @@ import java.util.Date;
 @Component
 public class DateUtils {
     public Date createDateFromDateString(String dateString){
-        DateFormat formate = new SimpleDateFormat("yyyy-MM-dd");
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date date = null;
         if (StringUtils.hasText(dateString)){
             try {
-                date = formate.parse(dateString);
+                date = format.parse(dateString);
             } catch (ParseException e) {
                 date = new Date();
             }
